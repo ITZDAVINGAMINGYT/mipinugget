@@ -1,56 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MIPI SNACKS 🍬</title>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-  <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-  <title>Hello World!</title>
-
-  <!-- The website stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
-
-  <!-- The website JavaScript file -->
-  <script src="/script.js" defer></script>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-  <div class="wrapper">
-    <div class="content" role="main">
-      <h1 class="title">Oh hi website!</h1>
-      <img src="/cool-website.svg" class="illustration" alt="cool website" />
-      <div class="instructions">
-        <p>
-          Fork <a href="https://github.com/glitchdotcom/website-to-compute">this project</a> and open it in a GitHub Codespace.
-        </p>
-        <p> Follow the steps in the README to deploy your new website to Fastly in a few steps!
-        </p>
+  <!-- Sunset Sky Background with Gummy Bears and Mountains -->
+  <div class="sky-bg">
+    <div class="sun"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <div class="mountains">
+      <div class="mountain mountain1"></div>
+      <div class="mountain mountain2"></div>
+      <div class="mountain mountain3"></div>
+    </div>
+    <div class="gummy gummy1"></div>
+    <div class="gummy gummy2"></div>
+    <div class="gummy gummy3"></div>
+  </div>
 
-      </div>
+  <!-- Hero Section -->
+<section class="hero">
+  <h1 class="hero-title">Welcome to <span>MIPI SNACKS</span></h1>
+  <p class="hero-sub">Sweetness You Can’t Resist – Strawberry Yupi, Neon Yupi, and More!</p>
 
-      <footer class="footer">
-        <div>
-          <a class="remix" href="https://github.com/glitchdotcom/website-to-compute">🚧 Get your own site</a>
-        </div>
-      </footer>
+  <div class="cta-wrapper">
+    <a href="https://forms.gle/EKzQLwQvBmD3U7nq6" target="_blank">
+  <button class="cta">🍭 Shop Now</button>
+</a>
+
+    <div class="jellybean-dancer"></div>
+  </div>
+</section>
+
+
+  <!-- About Us -->
+  <section class="about">
+    <h2>🍓 About MIPI SNACKS</h2>
+    <p>
+      We’re your go-to snack spot right in the heart of your school!  
+      From the chewy goodness of Strawberry Yupi to colorful neon jellies,  
+      MIPI SNACKS brings joy, flavor, and sugar-powered happiness to every recess.
+      All fresh, all fun, all MIPI.
+    </p>
+  </section>
+<!-- Already exists near top, so just leave them there -->
+<!-- No need to repeat near footer -->
+<div class="orb-container">
+  <canvas id="orb-canvas"></canvas>
+</div>
+<section class="favorites">
+  <h2 class="section-title">🍬 Fan Favorites</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/strawberry-yupi.png" alt="Strawberry Yupi">
+      <h3>Strawberry Yupi</h3>
+      <p>Juicy, chewy, and super pink.</p>
+    </div>
+    <div class="product-card">
+      <img src="images/neon-yupi.png" alt="Neon Yupi">
+      <h3>Neon Yupi</h3>
+      <p>Glow up your snack time 🛸</p>
+    </div>
+    <div class="product-card">
+      <img src="images/cola-bottle.png" alt="Cola Gummies">
+      <h3>Cola Gummies</h3>
+      <p>Classic soda fizz in chewy form!</p>
     </div>
   </div>
+  <div class="gummybear-bounce"></div>
+</section>
+<section class="our-products">
+  <h2 class="section-title">🍬 Our Products</h2>
+  <p class="section-subtitle">Each pack contains 7 pieces of mouth-melting joy!</p>
+
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-card biome biome-1">
+      <img src="images/strawberry-yupi.png" alt="Strawberry Yupi" class="product-img" />
+      <h3>Strawberry Yupi</h3>
+      <p class="price"><span class="old-price">Rp 25.000</span> Rp 18.000</p>
+      <button class="buy-btn">🛒 Add to Cart</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card biome biome-2">
+      <img src="images/neon-yupi.png" alt="Neon Yupi" class="product-img" />
+      <h3>Neon Yupi</h3>
+      <p class="price"><span class="old-price">Rp 20.000</span> Rp 14.000</p>
+      <button class="buy-btn">🛒 Add to Cart</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card biome biome-3">
+      <img src="images/cola-bottle.png" alt="Cola Yupi" class="product-img" />
+      <h3>Cola Yupi</h3>
+      <p class="price"><span class="old-price">Rp 22.000</span> Rp 16.000</p>
+      <button class="buy-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="choco-river">
+  <div class="sky-background">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="choco-stream"></div>
+  </div>
+</section>
+
+
+<section class="reviews-section">
+  <h2>What People Are Saying 🍭</h2>
+  <div class="review-cards">
+    <div class="review-card">
+      <p>“Not gonna lie... the cola burst one made me ascend 💥”</p>
+      <span>@sweettooth88</span>
+    </div>
+    <div class="review-card">
+      <p>“7 pieces?? I shared 2 and instantly regretted it 😭🔥”</p>
+      <span>@mysterybiter</span>
+    </div>
+    <div class="review-card">
+      <p>“Tasted rainbow. Saw colors. Felt emotions. 10/10.”</p>
+      <span>@crunchy_goblin</span>
+    </div>
+  </div>
+</section>
+
+
+<section class="payment-section" style="text-align: center; padding: 2em; background: linear-gradient(to bottom, #fff0f5, #ffe4e1); border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: 2em auto; max-width: 600px; font-family: 'Comic Sans MS', cursive;">
+  <h2 style="font-size: 2em; color: #b44a73; margin-bottom: 0.5em;">💳 Payment Instructions</h2>
+  <p style="color: #5e405b; font-size: 1.1em;">Follow these easy steps to complete your sweet order:</p>
+  <ul style="list-style: none; padding: 0; color: #4a3b47;">
+    <li><strong>1.</strong> Fill the <a href="https://forms.gle/EKzQLwQvBmD3U7nq6" target="_blank" style="color: #d95a7b; text-decoration: underline;">Order Form</a></li>
+    <li><strong>2.</strong> Wait for DM confirmation 📩</li>
+    <li><strong>3.</strong> Pay with:
+      <ul style="list-style: none; padding: 0.5em 0; font-weight: bold;">
+        <li>📱 Dana: 0877 3557 8998</li>
+        <li>📱 Gopay: 0877 3557 8998</li>
+        <li>🤝 Cash (COD): Same-school only</li>
+      </ul>
+    </li>
+    <li><strong>4.</strong> Done! We’ll deliver it 🍬🚚</li>
+  </ul>
+</section>
+
+<footer class="powered-by">
+  <p>🔌 Powered by</p>
+  <div class="power-logos">
+    <span>BAU & BAUTD</span>
+    <span>WOOSH STUDIOS</span>
+    <span>FISHTOPIA LLC</span>
+  </div>
+</footer>
+
+  <!-- Footer -->
+  <footer>
+     <p>© 2025 <strong>MIPI SNACKS</strong>. All sweetness reserved. 🍬<br>
+  Made with ❤️ by <strong>THE MIPI TEAM</strong></p>
+
+  </footer>
+
+
+
 </body>
 
 </html>
